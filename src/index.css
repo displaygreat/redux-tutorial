@@ -10,10 +10,47 @@
   box-sizing: border-box;
 }
 #root {
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  background-color: var(--light);
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 body {
   margin: 0;
   padding: 0;
+}
+.container {
+  padding: 40px 20px;
+}
+nav {
+  background-color: var(--light-brown);
+  color: var(--light-brown);
+}
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link {
+  color: var(--light);
+  margin-left: 30px;
+  border-bottom: 1px solid transparent;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--light);
+  border-bottom: 1px solid var(--light);
+}
+h1 {
+  color: var(--orange);
+  font-weight: 700;
+}
+h2 {
+  color: var(--light-brown);
+}
+.btn {
+  background-color: var(--orange);
+  color: var(--light);
 }
